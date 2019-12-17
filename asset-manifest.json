@@ -1,0 +1,13 @@
+{
+  "main.css": "/solve-24/static/css/main.bf8335b9.chunk.css",
+  "main.js": "/solve-24/static/js/main.b1902c67.chunk.js",
+  "main.js.map": "/solve-24/static/js/main.b1902c67.chunk.js.map",
+  "runtime~main.js": "/solve-24/static/js/runtime~main.57c98537.js",
+  "runtime~main.js.map": "/solve-24/static/js/runtime~main.57c98537.js.map",
+  "vendors~main.js": "/solve-24/static/js/vendors~main.3ca81432.chunk.js",
+  "vendors~main.js.map": "/solve-24/static/js/vendors~main.3ca81432.chunk.js.map",
+  "./service-worker.js": "/solve-24/./service-worker.js",
+  "index.html": "/solve-24/index.html",
+  "manifest.json": "/solve-24/manifest.json",
+  "precache-manifest.caa4777ed8e37ee5cf83dca011e169b0.js": "/solve-24/precache-manifest.caa4777ed8e37ee5cf83dca011e169b0.js"
+}
