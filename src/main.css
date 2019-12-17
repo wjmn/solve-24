@@ -1,0 +1,178 @@
+/*
+  elm-hot creates an additional div wrapper around the app to make HMR possible.
+  This could break styling in development mode if you are using Elm UI.
+
+  More context in the issue:
+    https://github.com/halfzebra/create-elm-app/issues/320
+*/
+[data-elm-hot="true"] {
+  height: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: #EDF2F7;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.full-height {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: auto;
+}
+
+.centric {
+  box-shadow: 0 0 20px #CBD5E0;
+  border-radius: 10px;
+  background: white;
+  min-width: 600px;
+}
+
+.card-header {
+  background: #4299E1;
+  padding: 1rem;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.numerical {
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  width: 50%;
+  background: #E2E8F0;
+  color: #4A5568;
+  border: 2px solid white;
+  margin-left: 0.5rem;
+  border-radius: 5px;
+  transition: 0.3s all;
+}
+
+.label {
+  text-transform: uppercase;
+  color: #4A5568;
+  font-size: 0.9em;
+}
+
+.numerical:hover {
+  background: #EDF2F7;
+}
+.numerical:focus {
+  background: white;
+  border: 2px solid #63B3ED;
+}
+
+.numerical.small {
+  width: 3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+button {
+  box-shadow: 0 0 10px #CBD5E0;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: 0.3s all;
+  border-radius: 5px;
+}
+
+button:hover {
+  box-shadow: 0 0 30px #CBD5E0;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+button.small {
+  background: #F7FAFC;
+  color: #718096;
+}
+
+button.big {
+  background: #4299E1;
+  color: white;
+}
+
+button.big:hover {
+  box-shadow: 0 0 10px #2B6CB0;
+}
+
+button.big:active {
+  box-shadow: none;
+}
+
+.error {
+  margin: 0.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #FED7D7;
+  color: #C53030;
+  border-radius: 5px;
+}
+
+.error p {
+  margin: 0;
+}
+
+.solutions {
+  margin-top: 2rem;
+  border-top: 1px solid #E2E8F0;
+  padding-top: 2rem;
+}
+
+.solution {
+  box-shadow: 0 0 10px #E2E8F0;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s all;
+  background: #EDF2F7;
+  color: #4A5568;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 999px;
+}
+
+.solution:hover {
+  background: #4299E1;
+  color: white;
+}
+
+  input[type=number] {
+      -moz-appearance: textfield;
+   } 
